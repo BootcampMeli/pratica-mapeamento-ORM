@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.dto.PublicationDTO;
 import com.example.demo.entity.PublicationEntity;
 import com.example.demo.entity.UserEntity;
 import com.example.demo.service.PublicationServiceImpl;
@@ -21,8 +22,8 @@ public class PublicationController {
     }
 
     @PostMapping
-    public ResponseEntity<PublicationEntity> addPublication(@RequestBody PublicationEntity publicationEntity) {
-        PublicationEntity newPublication = publicationService.addPublication(publicationEntity);
+    public ResponseEntity<PublicationEntity> addPublication(@RequestBody PublicationDTO publicationDTO) {
+        PublicationEntity newPublication = publicationService.addPublication(publicationDTO);
         return new ResponseEntity<>(newPublication, HttpStatus.CREATED);
     }
 }

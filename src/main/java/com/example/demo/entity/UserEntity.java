@@ -15,7 +15,7 @@ public class UserEntity {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
     private long id;
 
@@ -25,6 +25,7 @@ public class UserEntity {
     @Enumerated(EnumType.STRING)
     @Column(length = 10)
     private UserType type;
+
 
 
 }
