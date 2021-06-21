@@ -1,1 +1,1 @@
-* [Documentação Postman](https://www.getpostman.com/collections/37c68d512256d1c1009c)
+* [Documentação Postman](https://documenter.getpostman.com/view/15986714/TzeZG7f8)
